@@ -1,0 +1,332 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Landing Section */
+.landing {
+    position: relative;
+    height: 100vh;
+    background: url('bgimage.webp') center/cover no-repeat;
+    color: rgb(2, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.landing p {
+    font-size: 1.5rem;
+}
+
+/*left side contacts*/
+.social-icons {
+    position: absolute; 
+    top: 30%; 
+    left: 20px; 
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column; 
+    gap: 35px; 
+}
+
+.social-icons a {
+    color: #0077b5; 
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #080808; 
+}
+
+
+/* About Me Section */
+#about {
+    padding: 3rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#about h2 {
+    text-align: center;
+    padding: 3rex;
+    color: #000000;
+    background-color: #6b5252;
+}
+
+#about p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/*Tech-Expertise*/
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#tech-expertise h2 {
+    text-align: center;
+    padding: 3rex;
+    color: #000000;
+    background-color: #6b5252;
+    width: 1350px;
+    margin: auto;
+}
+
+.chart-container {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.bar {
+    background-color: #152322; 
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative; 
+}
+
+.bar::after {
+    content: attr(data-skill);
+    position: absolute;
+    right: 10px; 
+}
+
+/* Projects Section */
+
+
+#project{
+    padding: 3rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#project h2 {
+    text-align: center;
+    padding: 3rex;
+    color: #000000;
+    background-color: #6b5252;
+}
+
+.container{
+    max-width: 800px;
+    margin: left;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-box {
+    background-color: #e0e0e0; 
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px; 
+    width: calc(45% - 10px); 
+    text-align: center; 
+}    
+
+.project-box3 {
+    background-color: #e0e0e0; 
+    border-radius: 8px;
+    color: #0c0c0c;
+    padding: 15px;
+    margin-bottom: 20px; 
+    width: calc(45% - 10px); 
+    text-align: center; 
+}
+
+.project-box img {
+    width: 100%; 
+    border-radius: 5px; 
+}
+
+.project-box h3 {
+    margin-top: 10px; 
+}
+
+.project-box p {
+    color: #555; 
+}
+
+
+
+/*Achievements*/
+
+#achievements {
+    max-width: 1350px; 
+    margin: 0 auto; 
+}
+
+
+#achievements h2 {
+        text-align: center;
+        padding: 3%;
+        color: #000000;
+        background-color: #6b5252;
+}
+
+.achievements-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.container{
+    max-width: 800px;
+    margin: right;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-card {
+    background-color: #e0e0e0; 
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px; 
+    width: calc(45% - 10px); 
+    text-align: center; 
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px); 
+}
+
+.achievement-title {
+    margin-top: 0; 
+}
+
+.achievement-description {
+    color: #555; 
+}
+
+
+#contacts h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    text-align: center; 
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; 
+    gap: 20px; 
+}
+
+.contact-item {
+    margin: 0; 
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-item i {
+    font-size: 2rem;
+    margin-right: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item a {
+    color: #f8f5f5;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: scale(1.1);
+}
+
+.contact-item a:hover {
+    color: #21a0ea;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/*responsive design*/
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .landing h1 {
+        font-size: 2rem;
+    }
+
+    .landing p {
+        font-size: 1.2rem;
+    }
+
+    .project-grid {
+        flex-direction: column;
+    }
+}
